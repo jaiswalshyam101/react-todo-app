@@ -1,5 +1,10 @@
+import { useContext } from "react"
+import TodoContext from "../context/TodoContext"
 
-const Listitem = ({todo ,removeTodo , editTodo}) => {
+const Listitem = ({todo ,}) => {
+
+   const {removeTodo , editTodo} = useContext(TodoContext)
+
     return (
         <li className="my-2 p-4 border border-gray-500 shadow-xl flex items-center justify-between">
             <div >
